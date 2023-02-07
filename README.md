@@ -18,12 +18,7 @@ function Component() {
 
   // You're in control of the current page
   const [currentPage, setCurrentPage] = useState(0);
-  const {
-    startIndex,
-    endIndex,
-    hasPreviousPage,
-    hasNextPage
-  } = usePagination({
+  const { startIndex, endIndex, hasPreviousPage, hasNextPage } = usePagination({
     pageSize: 3, // number of items per page
     currentPage,
     itemCount: items.length,
@@ -34,20 +29,22 @@ function Component() {
     <>
       <button
         disabled={!hasPreviousPage}
-        onClick={() => setCurrentPage((p) => p - 1)}>
+        onClick={() => setCurrentPage((p) => p - 1)}
+      >
         prev
       </button>
       <div>Current Page: {currentPage + 1}</div>
       <button
         disabled={!hasNextPage}
-        onClick={() => setCurrentPage((p) => p + 1)}>
+        onClick={() => setCurrentPage((p) => p + 1)}
+      >
         next
       </button>
 
       {items.slice(startIndex, endIndex).map((v) => (
         <div key={v}>item: {v}</div>
       ))}
-    </div>
-  )
+    </>
+  );
 }
 ```
