@@ -1,16 +1,24 @@
 {
-  "name": "use-paginate",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
-  "private": true,
-  "dependencies": {},
-  "devDependencies": {
-    "@nrwl/nx-cloud": "latest",
-    "nx": "15.6.3",
-    "prettier": "^2.6.2"
+  "name": "pagination-hook",
+  "version": "1.0.0",
+  "description": "React pagination. Create pagination in your React app",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "workspaces": [
-    "packages/*"
-  ]
+  "keywords": [
+    "react-paginate",
+    "react-pagination",
+    "pagination",
+    "react",
+    "use-paginate",
+    "use-pagination"
+  ],
+  "author": "Jonathan Asplund <jonathan@asplund.net>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "typescript": "^4.9.5"
+  }
 }
