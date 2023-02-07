@@ -1,7 +1,7 @@
 {
   "name": "pagination-hook",
   "version": "1.0.0",
-  "description": "React pagination. Create pagination in your React app",
+  "description": "React pagination hook. Create pagination in your React app",
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "tsc",
